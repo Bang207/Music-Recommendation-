@@ -13,14 +13,15 @@ if name not in [None, ''] and author not in [None, '']:
 		recommendation = Music_recommendation.getSong_recommendations(name, author)
 		recommendation.reset_index(drop=True, inplace=True)
 		recommendation.index = np.arange(1, len(recommendation) + 1)
-		st.write('Here is 10 songs we recommend to you, thank you for using our service, enjoy <3')
+		st.write('Here is 10 songs we recommend to you, Thank you for using our service, enjoy <3')
 		st.dataframe(recommendation)
 	except:
 		st.write("""
-		This song does not exist. 
+		This song does not exist.\n
 		Please consider the followings:
 		+ Choose songs from 1920 to 2020
 		+ Enter the authors in correct syntax
 		+ Try enter the correct order of the authors (same as it appears on the Internet)
 		+ Try swapping the order of the authors
+		If it is still not working, maybe our system do not have that song.
 		""")
