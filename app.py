@@ -18,8 +18,9 @@ if name not in [None, ''] and author not in [None, '']:
 	except:
 		st.write("""
 		This song is not exist. 
-		Please consider the followings
+		Please consider the followings:
 		+ Choose songs from 1920 to 2020
 		+ Enter the authors in correct syntax
+		+ Try enter the correct order of the authors (same as it appears on the Internet)
 		+ Try swapping the order of the authors
 		""")
