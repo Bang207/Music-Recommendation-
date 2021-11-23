@@ -17,7 +17,7 @@ if name not in [None, ''] and author not in [None, '']:
 		st.dataframe(recommendation)
 	except:
 		st.write("""
-		This song is not exist. 
+		This song does not exist. 
 		Please consider the followings:
 		+ Choose songs from 1920 to 2020
 		+ Enter the authors in correct syntax
