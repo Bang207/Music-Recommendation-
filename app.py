@@ -22,6 +22,6 @@ if name not in [None, ''] and author not in [None, '']:
 		+ Choose songs from 1920 to 2020
 		+ Enter the authors in correct syntax
 		+ Try enter the correct order of the authors (same as it appears on the Internet)
-		+ Try swapping the order of the authors
+		+ Try swapping the order of the authors\n
 		If it is still not working, maybe our system do not have that song.
 		""")
