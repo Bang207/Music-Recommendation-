@@ -10,14 +10,14 @@ author = st.text_input("Enter the author(if there are more than one author, sepa
 if name not in [None, ''] and author not in [None, '']:
 	author = str([author.strip().title() for author in author.split(',')])
 	try:
-		st.write('Here is 10 songs we recommend to you, thank you for using our service, enjoy <3')
 		recommendation = Music_recommendation.getSong_recommendations(name, author)
 		recommendation.reset_index(drop=True, inplace=True)
 		recommendation.index = np.arange(1, len(recommendation) + 1)
+		st.write('Here is 10 songs we recommend to you, thank you for using our service, enjoy <3')
 		st.dataframe(recommendation)
 	except:
 		st.write("""
-		This song is not exist 
+		This song is not exist. 
 		Please consider the followings
 		+ Choose songs from 1920 to 2020
 		+ Enter the authors in correct syntax
